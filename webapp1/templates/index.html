@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+name:
+{{form1.Title}}
+detailsss:
+{{form1.Details|safe}}
+{{form1.media}}
+
+
+<br>
+<br>
+<br>
+<br>
+{% for i in all_blog %}
+
+{{i.Title}}
+{{i.Details | safe}}
+
+{% endfor %}
+</body>
+</html>
